@@ -13,5 +13,5 @@ Contributions are highly welcome - just send me a [pull request][pullreq].
 
 [pebble]:  https://getpebble.com/
 [pebbleone]: https://github.com/bertfreudenberg/PebbleONE
-[sdk2]:    https://developer.getpebble.com/2/
+[sdk3]:    https://developer.getpebble.com/sdk/changelogs/3.2.1/
 [pullreq]: https://help.github.com/articles/using-pull-requests
