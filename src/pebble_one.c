@@ -134,7 +134,7 @@ static void hands_layer_update_callback(Layer *layer, GContext* ctx) {
 
   GPoint center = GPoint(CENTER_X, CENTER_Y);
 
-  // hours and minutes
+// hours and minutes
 //  int32_t hour_angle = TRIG_MAX_ANGLE * (now->tm_hour * 5 + now->tm_min / 12) / 60;
   int32_t hour_angle = (TRIG_MAX_ANGLE * (((hour % 12) * 6) + (min / 10))) / (12 * 6);
   int32_t min_angle = TRIG_MAX_ANGLE * min / 60;
@@ -284,6 +284,7 @@ static void handle_init() {
   handle_battery(battery_state_service_peek());
   bluetooth_connection_service_subscribe(&handle_bluetooth);
   handle_bluetooth(bluetooth_connection_service_peek());
+  handle_tick(now,1);
 }
 
 static void handle_deinit() {
